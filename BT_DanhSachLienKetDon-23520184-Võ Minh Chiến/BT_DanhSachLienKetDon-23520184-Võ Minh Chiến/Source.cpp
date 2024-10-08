@@ -141,7 +141,7 @@ void RemoveSinhVien(LIST& l) {
 //5. Liệt kê thông tin của các sinh viên có điểm trung bình lớn hơn hay bằng 5.
 void DisplayListHigherThan5(LIST &list) {
 	Node* p = list.pHead;
-	cout << "Thong tin cac sinh vien co DTB >= 5 la: ";
+	cout << "Thong tin cac sinh vien co DTB >= 5 la: \n";
 	while (p) {
 		if (p->info.DTB >= 5)
 		{
