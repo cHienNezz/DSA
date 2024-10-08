@@ -142,9 +142,9 @@ void RemoveSinhVien(LIST& l) {
 void DisplayListHigherThan5(LIST &list) {
 	Node* p = list.pHead;
 	while (p) {
+		cout << "Thong tin cac sinh vien co DTB >= 5 la: ";
 		if (p->info.DTB >= 5)
 		{
-			cout << "Thong tin cac sinh vien co DTB >= 5 la: ";
 			cout << "MSSV: " << p->info.MSSV << ", Ten: " << p->info.Ten << ", DTB: " << p->info.DTB << endl;
 		}
 		p = p->pNext;
