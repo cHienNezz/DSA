@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -71,7 +71,9 @@ Node* SearchByMSSV(LIST& l, string MSSV) {
 	return search;
 }
 
-void CheckSinhVien(LIST& l, string MSSV) {
+void CheckSinhVien(LIST& l) {
+	string MSSV;
+	cout << "Nhap vao MSSV can tim: "; cin >> MSSV;
 	Node* check = SearchByMSSV(l, MSSV);
 	if (check) cout << "Co hoc sinh mang MSSV " << MSSV << " trong lop.\n";
 	else cout << "Khong co hoc sinh mang MSSV " << MSSV << " trong lop.\n";
@@ -235,7 +237,7 @@ void AddSinhVienIntoList(LIST& l) {
 int main() {
 	LIST l;
 	AddList(l);
-	CheckSinhVien(l, "123");
+	CheckSinhVien(l);
 	RemoveSinhVien(l);
 	DisplayListHigherThan5(l);
 	DisplayOnLevel(l);
